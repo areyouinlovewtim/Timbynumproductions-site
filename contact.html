@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact • Tim Bynum Productions</title>
+  <meta name="description" content="Contact Tim Bynum Productions for partnerships, bookings, and press.">
+  <meta property="og:title" content="Contact • Tim Bynum Productions">
+  <meta property="og:description" content="Contact Tim Bynum Productions for partnerships, bookings, and press.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/hero.jpg">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preload" href="assets/logo_user.jpg" as="image">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <img src="assets/logo_user.jpg" alt="Tim Bynum Productions logo" width="180" height="46">
+  </a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" class="site-nav" aria-label="Primary">
+    <a href="projects.html">Projects</a>
+    <a href="screenings.html">Screenings</a>
+    <a href="news.html">News</a>
+    <a href="about.html">About</a>
+    <a class="cta" href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="page">
+  <h1>Contact</h1>
+  <p>For collaborations, screenings, and media, reach us here or email <a href="mailto:info@timbynumproductions.com">info@timbynumproductions.com</a>.</p>
+
+  <form class="contact-form" method="POST" action="https://formspree.io/f/YOUR_FORMSPREE_ID">
+    <label>
+      Your Name
+      <input type="text" name="name" required aria-required="true" placeholder="Full name">
+    </label>
+    <label>
+      Email
+      <input type="email" name="email" required aria-required="true" placeholder="you@example.com">
+    </label>
+    <label>
+      Message
+      <textarea name="message" rows="6" required aria-required="true" placeholder="Tell us about your project, screening, or press inquiry."></textarea>
+    </label>
+    <button class="btn" type="submit">Send</button>
+  </form>
+
+  <section class="stripe">
+    <h2>Press Kit</h2>
+    <p>One-sheet, loglines, bios, and stills available upon request.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <img src="assets/logo_user.jpg" alt="Tim Bynum Productions logo" class="footer-logo">
+      <p>Stories that move. Moments that matter.</p>
+      <p>Based in Memphis, Tennessee.</p>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.youtube.com/@" target="_blank" rel="noopener">YouTube</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p><a href="mailto:info@timbynumproductions.com">info@timbynumproductions.com</a></p>
+      <p>Press & bookings available on request.</p>
+    </div>
+  </div>
+  <p class="copyright">© Tim Bynum Productions 2025. All rights reserved.</p>
+</footer>
+</body>
+</html>

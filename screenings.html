@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Screenings • Tim Bynum Productions</title>
+  <meta name="description" content="Upcoming premieres, festivals, and private screenings for Tim Bynum Productions.">
+  <meta property="og:title" content="Screenings • Tim Bynum Productions">
+  <meta property="og:description" content="Upcoming premieres, festivals, and private screenings for Tim Bynum Productions.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/hero.jpg">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preload" href="assets/logo_user.jpg" as="image">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <img src="assets/logo_user.jpg" alt="Tim Bynum Productions logo" width="180" height="46">
+  </a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" class="site-nav" aria-label="Primary">
+    <a href="projects.html">Projects</a>
+    <a href="screenings.html">Screenings</a>
+    <a href="news.html">News</a>
+    <a href="about.html">About</a>
+    <a class="cta" href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="page">
+  <h1>Screenings</h1>
+  <p>Sign up to be notified about private theater premieres and festival dates. Venue rentals for 50–75 guests available.</p>
+
+  <div class="screening-list" id="screeningList">
+    <div class="screening-item">
+      <h3>Memphis Private Premiere (TBD)</h3>
+      <p>Date: Winter 2025 • Venue: TBA • Capacity: 50–75</p>
+      <button class="btn small" data-intent="rsvp">Request Invite</button>
+    </div>
+  </div>
+
+<section class="page">
+  <h2>RSVP for Screenings</h2>
+  <form class="contact-form" method="POST" action="https://formspree.io/f/YOUR_FORMSPREE_ID">
+    <label>Full Name
+      <input type="text" name="name" required>
+    </label>
+    <label>Email
+      <input type="email" name="email" required>
+    </label>
+    <label>City
+      <input type="text" name="city">
+    </label>
+    <label>Notes
+      <textarea name="notes" rows="4" placeholder="Which event are you interested in?"></textarea>
+    </label>
+    <button class="btn" type="submit">Request Invite</button>
+  </form>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <img src="assets/logo_user.jpg" alt="Tim Bynum Productions logo" class="footer-logo">
+      <p>Stories that move. Moments that matter.</p>
+      <p>Based in Memphis, Tennessee.</p>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.youtube.com/@" target="_blank" rel="noopener">YouTube</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p><a href="mailto:info@timbynumproductions.com">info@timbynumproductions.com</a></p>
+      <p>Press & bookings available on request.</p>
+    </div>
+  </div>
+  <p class="copyright">© Tim Bynum Productions 2025. All rights reserved.</p>
+</footer>
+</body>
+</html>
