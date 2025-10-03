@@ -1,4 +1,21 @@
 backend:
   name: github
-  repo: areyouinlovetim/Timbynumproductions-site   # your GitHub username/repo
+  repo: areyouinlovetim/Timbynumproductions-site  # <-- your GitHub user/repo
   branch: main
+
+site_url: "https://timbynumproductions.netlify.app"
+
+# Where uploaded images/files are stored in the repo
+media_folder: "assets"
+public_folder: "/assets"
+
+collections:
+  - name: "news"
+    label: "News Posts"
+    folder: "news_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
