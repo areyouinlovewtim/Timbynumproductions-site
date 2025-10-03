@@ -1,22 +1,18 @@
 backend:
   name: github
-  repo: areyouinlovetim/Timbynumproductions-site   # <- your user/repo
+  repo: areyouinlovetim/Timbynumproductions-site
   branch: main
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
-
-site_url: "https://timbynumproductions.netlify.app"
 
 media_folder: "assets"
 public_folder: "/assets"
 
 collections:
   - name: "news"
-    label: "News Posts"
+    label: "News"
     folder: "news_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
