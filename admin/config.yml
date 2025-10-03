@@ -1,13 +1,12 @@
 backend:
   name: github
-  repo: areyouinlovetim/Timbynumproductions-site  # <-- your GitHub user/repo
+  repo: areyouinlovetim/Timbynumproductions-site  # your GitHub user/repo
   branch: main
 
 site_url: "https://timbynumproductions.netlify.app"
 
-# Where uploaded images/files are stored in the repo
-media_folder: "assets"
-public_folder: "/assets"
+media_folder: "assets"     # where uploads are stored in the repo
+public_folder: "/assets"   # how the site references those uploads
 
 collections:
   - name: "news"
