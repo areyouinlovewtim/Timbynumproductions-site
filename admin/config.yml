@@ -1,17 +1,4 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: areyouinlovetim/Timbynumproductions-site   # your GitHub username/repo
   branch: main
-
-media_folder: "assets"
-public_folder: "/assets"
-
-collections:
-  - name: "news"
-    label: "News Posts"
-    folder: "news_posts"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
